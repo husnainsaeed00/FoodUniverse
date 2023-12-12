@@ -9,6 +9,7 @@ body{
     grid-template-columns:repeat(6 1fr);
     grid-template-rows:repeat(22 1fr);
     box-sizing: border-box;
+    font-size:16px;
 }
 
 /*-----------header Styles------*/
@@ -33,11 +34,11 @@ header{
     align-items: center;
     color: #FFF;
 font-family: Montserrat;
-font-size: 40px;
+font-size: 3em;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
-margin-left:1%;
+margin-left:4%;
 }
 .menu-bar{
     margin-right:5%;
@@ -95,7 +96,14 @@ main{
 }
 .right-Main-Banner{
     display: flex;
-    flex-direction: column;align-items: center;
+    background:url("assets/Burger.png");
+    width: 740px;
+    height: 720px;
+    background-position: center;
+    flex-direction: column;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
 }
 .left-Main-Banner{
     display: flex;
@@ -120,7 +128,7 @@ font-weight: 500;
 line-height: normal;
 }
 .banner-heading{
-    font-size: 44px;
+    font-size: 43px;
 }
 .input-container{
     display: flex;
@@ -189,9 +197,12 @@ input[type="text"]{
     margin-right: 10%;
     position: relative;
 }
-.featured-img img {
-    max-width: 90%; 
-    height: auto;
+.featured-img {
+    background: url("assets/featured.png");
+    width:450px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
     
 }
 .category{
@@ -268,6 +279,49 @@ select{
     transition:background-color 0.5s, border 1s;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) -31.53%, rgba(253, 206, 119, 0.13) 303.75%);
 }
+.item-img{
+    width:290px;
+    height:290px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img1{
+    background: url("assets/Food1.png");
+    background-size: contain;
+    background-position: center;
+}
+.img2{
+    background: url("assets/Food4.png");
+    background-size: contain;
+    background-position: center;
+}
+.img3{
+    background: url("assets/Food2.png");
+    background-size: contain;
+    background-position: center;
+}
+.img4{
+    background: url("assets/Food3.png");
+    background-size: contain;
+    background-position: center;
+}
+.img5{
+    background: url("assets/Food4.png");
+    background-size: contain;
+    background-position: center;
+}
+.img6{
+    background: url("assets/Food1.png");
+    background-size: contain;
+    background-position: center;
+}
+.img7{
+    background: url("assets/Food3.png");
+    background-size: contain;
+    background-position: center;
+}
+
 .item:hover{
     background-color: black;
     border: 1px solid var(--secondaryColor);
@@ -290,3 +344,142 @@ a{
     text-decoration: none;
     color: var(--secondaryColor);
 }
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .banner-heading {
+      font-size: 24px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        font-size:16px;
+      }
+      .right-Main-Banner{
+        display: flex;
+        background:url("assets/Burger.png");
+        width: 500px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-heading{
+        font-size:2em;
+    }
+    .main-description{
+        font-size:18px;
+    }.total-items{
+        font-size: 18px;
+    }
+    .input-container{
+        display: flex;
+        justify-content: space-evenly;
+        font-size:17px;
+    }
+    #searchBtn{
+        margin-right:16%;
+    }
+    input[type="text"]{
+        width:60%;
+  }
+  .menu-bar{
+    display: none;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:.8em;
+  }
+  /*--------Featured Dish------*/
+  .featured-heading{
+    font-size:36px;
+  }
+  .featured>.lower-featured{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .featured-img{
+    width: 250px;
+    height: 250px;
+  }
+  
+  .featured-description>h1{
+    font-size:27px;
+  }
+  #ingredients{
+    width:100%;
+  }
+  .instructions{
+    display: none;
+  }
+  .reference{
+    display: none;
+  }
+
+  .all-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two items per row */
+    background-color: black; /* Black background for visibility */
+  }
+
+  .item {
+    max-width: calc(90% - 4%); /* Two items per row, considering margins */
+    margin: 2%; /* Adjust margins */
+    height: auto; /* Adjust height as per content */
+    background-color: var(--primaryColor); /* Revert background color */
+  }
+  .item-img{
+    width:215px;
+    height:215px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+  /* For screens between 768px and 1024px (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Adjustments for medium-sized screens */
+    .right-Main-Banner{
+        display: flex;
+    background:url("assets/Burger.png");
+    width: 600px;
+    height: 620px;
+    background-position: center;
+    flex-direction: column;
+    background-size: contain;
+    align-items: center;
+    background-repeat: no-repeat;
+    }
+    .featured-img {
+        background: url("assets/featured.png");
+        width:250px;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: contain;}
+        .reference{
+            display: none;
+        }
+        .item-img{
+            width:180px;
+            height:180px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          input[type="text"]{
+            width:58%;
+      }
+    /* ... Other adjustments */
+  }
+  
+  /* For screens larger than 1024px (e.g., desktops) */
+  @media (min-width: 1024px) {
+    /* Default styles (already defined in your CSS) */
+  }
+  

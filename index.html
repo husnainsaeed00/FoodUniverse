@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--------Header Section----------------->
     <header>
       <div class="logo">
         <img id="logoImg" src="assets/fooduni.png" />
@@ -19,9 +20,10 @@
         <button class="btn menu-btn2">Today's Dish</button>
       </div>
     </header>
+    <!--------Main Section------------------->
     <main>
       <div class="left-Main-Banner">
-        <h1>
+        <h1 class="banner-heading">
           Cooking <span class="white-span">Made </span
           ><span class="yellow-span">Easy</span
           ><span class="white-span">:<br /></span>
@@ -30,15 +32,106 @@
           <span class="yellow-span">.</span>
         </h1>
         <div>
-            <p class="main-description">
-          Discover easy cooking and fun surprises!<br/>Explore different recipes
-          every day,<br/> making your kitchen a place of endless flavors.</p>
+          <p class="main-description">
+            Discover easy cooking and fun surprises!<br />Explore different
+            recipes every day,<br />
+            making your kitchen a place of endless flavors.
+          </p>
         </div>
+        <div class="input-container">
+          <input type="text" name="search" placeholder="Search..." />
+          <button id="searchBtn">Search</button>
+        </div>
+        <h4 class="total-items">
+          Total Meals: <span class="item-count">576</span>
+        </h4>
       </div>
       <div class="right-Main-Banner">
         <img src="assets/Burger.png" />
       </div>
     </main>
+    <hr />
+    <!--------Featured Product section------->
+    <section class="featured">
+      <h1 class="featured-heading">
+        Featured <span class="yellow-span">Dish</span>
+        <span class="white-span">of the</span> Day
+      </h1>
+      <div class="lower-featured">
+        <div class="featured-description">
+          <h1>Primal Chicken Enchilada Casserole</h1>
+          <div class="category">
+            <h4>
+              <span class="white-span">Category:</span>
+              <span class="yellow-span">None Veg</span>
+            </h4>
+            <h4>
+              <span class="white-span">Type:</span>
+              <span class="yellow-span">Pakistani</span>
+            </h4>
+          </div>
+          <div class="dropdowns">
+            <select id="ingredients" name="Ingredients">
+              <option value="volvo">View Ingredients</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+            <select id="ingredients" name="Ingredients">
+              <option value="volvo">Get Instructions</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+          <button type="button" class="reference">
+            <img src="assets/Link.png" width="30" height="30" />Reference
+          </button>
+        </div>
+        <div class="featured-img">
+          <img src="assets/featured.png" width="500" height="500" />
+        </div>
+      </div>
+    </section>
+    <!--------All Items section------->
+    <section class="all-items">
+      <div class="item">
+        <img src="assets/Food1.png" width="290" alt="Food1" />
+        <h1>Big Mac</h1>
+      </div>
+      <div class="item">
+        <img src="assets/Food4.png" width="290" alt="Food1" />
+        <h1>Christams Cake</h1>
+      </div>
+      <div class="item">
+        <img src="assets/Food2.png" width="290" alt="Food1" />
+        <h1>Spicy Arabiata Penne</h1>
+      </div>
+      <div class="item">
+        <img src="assets/Food3.png" width="290" alt="Food1" />
+        <h1>Tarte Tatin</h1>
+      </div>
+      <div class="item">
+        <img src="assets/Food1.png" width="290" alt="Food1" />
+        <h1>Big Mac</h1>
+      </div>
+      <div class="item">
+        <img src="assets/Food4.png" width="290" alt="Food1" />
+        <h1>Christams Cake</h1>
+      </div>
+      <div class="item">
+        <img src="assets/Food2.png" width="290" alt="Food1" />
+        <h1>Spicy Arabiata Penne</h1>
+      </div>
+    </section>
+    <footer>
+      <h1 class="footer-heading">
+        Made <span class="white-span">By</span>
+        <span class="yellow-span"
+          ><a href="https://github.com/husnainsaeed00">Husnain Saeed</a></span
+        >
+      </h1>
+    </footer>
     <script src="script.js" async defer></script>
   </body>
 </html>

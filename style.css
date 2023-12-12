@@ -10,6 +10,7 @@ body{
     grid-template-rows:repeat(22 1fr);
     box-sizing: border-box;
     font-size:16px;
+    background-color: var(--primaryColor);
 }
 
 /*-----------header Styles------*/
@@ -259,9 +260,14 @@ select{
     outline: none;
 }
 /*------------All Items Section----------------*/
-
+.item-heading{
+    grid-row: 13/14;
+    grid-column:1/7;
+    margin:10 auto;
+    font-size: 50px;
+}
 .all-items{
-    grid-row:13/19;
+    grid-row:14/19;
     grid-column: 1/7;
     display: flex;
     flex-wrap: wrap;
